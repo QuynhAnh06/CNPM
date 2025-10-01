@@ -1,6 +1,6 @@
-# 📚 YÊU CẦU PHẦN MỀM: HỆ THỐNG QUẢN LÝ THƯ VIỆN
+#  YÊU CẦU PHẦN MỀM: HỆ THỐNG QUẢN LÝ THƯ VIỆN
 
-## 1. 📋 Thông tin chung
+## 1. Thông tin chung
 
 ### **Tên đề tài** 
 Quản lý thư viện
@@ -15,39 +15,39 @@ Website
 
 ### **Ngôn ngữ & Công nghệ**
 
-#### 🎨 Frontend
+#### Frontend
 - [ ] HTML5
 - [ ] CSS3
 - [ ] JavaScript
 - [ ] Có thể dùng ASP.NET Razor Pages/ASP.NET MVC
 
-#### ⚙️ Backend
+#### Backend
 - [ ] C# ASP.NET
 
-#### 🗄️ Database
+####  Database
 - [ ] SQL Server
 
 ---
 
-## 2. 🎯 Phạm vi chức năng
+## 2. Phạm vi chức năng
 
-### **📚 Quản lý Sách**
+### ** Quản lý Sách**
 - Thêm, sửa, xóa, tìm kiếm sách
 - Quản lý thông tin sách: ISBN, tiêu đề, tác giả, thể loại, năm xuất bản
 - Theo dõi tình trạng sách (có sẵn, đang mượn, bảo trì)
 
-### **👥 Quản lý Độc giả**
+### ** Quản lý Độc giả**
 - Đăng ký, cập nhật thông tin độc giả
 - Quản lý thẻ thư viện
 - Theo dõi lịch sử mượn/trả
 
-### **🔄 Quy trình Mượn/Trả**
+### ** Quy trình Mượn/Trả**
 - Xử lý mượn sách
 - Xử lý trả sách
 - Tính phí phạt quá hạn (nếu có)
 - Gia hạn thời gian mượn
 
-### **📊 Báo cáo & Thống kê**
+### ** Báo cáo & Thống kê**
 - Thống kê sách mượn nhiều nhất
 - Báo cáo tình hình mượn/trả
 - Thống kê độc giả tích cực
@@ -55,7 +55,7 @@ Website
 
 ---
 
-## 3. 🗄️ Cơ sở dữ liệu
+## 3.  Cơ sở dữ liệu
 
 ### **Các bảng chính**
 | Tên bảng | Mô tả |
@@ -79,14 +79,14 @@ Website
 
 ---
 
-## 5. 📱 Giao diện người dùng
+## 5.  Giao diện người dùng
 
-### **🏠 Trang chủ**
+### ** Trang chủ**
 - Tìm kiếm sách nhanh
 - Sách mới nhất
 - Thông báo quan trọng
 
-### **⚙️ Trang quản lý**
+### ** Trang quản lý**
 - Dashboard tổng quan
 - Quản lý danh mục
 - Xử lý giao dịch
