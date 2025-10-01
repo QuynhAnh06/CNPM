@@ -2,7 +2,7 @@
 
 ## 1. Thông tin chung
 
-### **Tên đề tài** 
+### Tên đề tài 
 Quản lý thư viện
 
 ### **Mục tiêu**
@@ -33,21 +33,22 @@ Website
 
 ### ** Quản lý Sách**
 - Thêm, sửa, xóa, tìm kiếm sách
-- Quản lý thông tin sách: ISBN, tiêu đề, tác giả, thể loại, năm xuất bản
-- Theo dõi tình trạng sách (có sẵn, đang mượn, bảo trì)
+- Quản lý thông tin sách: tên, tác giả, NXB, năm XB, thể loại, số lượng, vị trí lưu trữ.
+- Phân loại theo danh mục (giáo trình, tham khảo, báo, tạp chí...).
 
-### ** Quản lý Độc giả**
-- Đăng ký, cập nhật thông tin độc giả
-- Quản lý thẻ thư viện
-- Theo dõi lịch sử mượn/trả
+### Quản lý Độc giả
+- Thêm / Sửa / Xóa độc giả (họ tên, ngày sinh, email, số điện thoại, loại độc giả: sinh viên/giảng viên).
+- Cấp tài khoản đăng nhập cho độc giả để tra cứu sách.
+- Quản lý thẻ thư viện, ngày hết hạn.
 
-### ** Quy trình Mượn/Trả**
-- Xử lý mượn sách
-- Xử lý trả sách
-- Tính phí phạt quá hạn (nếu có)
-- Gia hạn thời gian mượn
+### Quy trình Mượn/Trả
+- Lập phiếu mượn sách: mã phiếu, mã độc giả, ngày mượn, ngày hẹn trả.
+- Cập nhật trạng thái trả sách (đúng hạn, trễ hạn).
+- Tính toán tiền phạt (nếu trả trễ).
+- Giới hạn số sách mượn cùng lúc theo loại độc giả.
 
-### ** Báo cáo & Thống kê**
+
+### Báo cáo & Thống kê
 - Thống kê sách mượn nhiều nhất
 - Báo cáo tình hình mượn/trả
 - Thống kê độc giả tích cực
