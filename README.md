@@ -1,3 +1,7 @@
+# QUẢN LÝ DỰ ÁN
+
+- [Nhấn vào link sau ](https://trello.com/invite/b/68d2d18659674a93d647ec73/ATTId9a5c96829b12125f603539d5fd045561F317549/dự-an-website-quản-ly-thư-viện) để có thể theo dõi tiến trình làm việc qua các tuần
+
 #  YÊU CẦU PHẦN MỀM: HỆ THỐNG QUẢN LÝ THƯ VIỆN
 
 ## 1. Thông tin chung
@@ -18,8 +22,7 @@ Website
 #### Frontend
 - [ ] HTML5
 - [ ] CSS3
-- [ ] JavaScript
-- [ ] Có thể dùng ASP.NET Razor Pages/ASP.NET MVC
+- [ ] JavaScript ( Có thể dùng ASP.NET Razor Pages/ASP.NET MVC )
 
 #### Backend
 - [ ] C# ASP.NET
@@ -29,72 +32,69 @@ Website
 
 ---
 
-## 2. Phạm vi chức năng
+## 2. Yêu cầu chức năng ( Functional Requirements )
 
-### ** Quản lý Sách**
-- Thêm, sửa, xóa, tìm kiếm sách
+### 2.1. Quản lý Sách & Tài liệu
+- Thêm / Sửa / Xóa sách, tài liệu.
 - Quản lý thông tin sách: tên, tác giả, NXB, năm XB, thể loại, số lượng, vị trí lưu trữ.
 - Phân loại theo danh mục (giáo trình, tham khảo, báo, tạp chí...).
 
-### Quản lý Độc giả
+### 2.2. Quản lý Độc giả
 - Thêm / Sửa / Xóa độc giả (họ tên, ngày sinh, email, số điện thoại, loại độc giả: sinh viên/giảng viên).
 - Cấp tài khoản đăng nhập cho độc giả để tra cứu sách.
 - Quản lý thẻ thư viện, ngày hết hạn.
 
-### Quy trình Mượn/Trả
+### 2.3. Quản lý mươn / trả sách
 - Lập phiếu mượn sách: mã phiếu, mã độc giả, ngày mượn, ngày hẹn trả.
 - Cập nhật trạng thái trả sách (đúng hạn, trễ hạn).
 - Tính toán tiền phạt (nếu trả trễ).
 - Giới hạn số sách mượn cùng lúc theo loại độc giả.
 
+### 2.4. Tìm kím sách
+- Tìm kím theo **tên, tác giả, thể loại, năm XB**
+- Hiển thị tình trạng sách ( còn / đã mượn )
 
-### Báo cáo & Thống kê
-- Thống kê sách mượn nhiều nhất
-- Báo cáo tình hình mượn/trả
-- Thống kê độc giả tích cực
-- Báo cáo tồn kho sách
 
----
+### 2.5.Quản lý thống kê & báo cáo
+- Thống kê số lượng sách còn, sách đang được mượn.
+- Thống kê độc giả mượn nhiều nhất, sách được mượn nhiều nhất.
+- Báo cáo theo tháng/quý/năm (số lượt mượn, trả, vi phạm trễ hạn).
 
-## 3.  Cơ sở dữ liệu
 
-### **Các bảng chính**
-| Tên bảng | Mô tả |
-|----------|--------|
-| `Books` | Thông tin sách |
-| `Readers` | Thông tin độc giả |
-| `BorrowTransactions` | Giao dịch mượn/trả |
-| `Categories` | Thể loại sách |
-| `Authors` | Tác giả |
-| `Publishers` | Nhà xuất bản |
-
----
-
-## 4. 👥 Đối tượng sử dụng
-
-| Đối tượng | Quyền hạn |
-|-----------|-----------|
-| **Quản trị viên** | Toàn quyền hệ thống |
-| **Thủ thư** | Quản lý mượn/trả, độc giả |
-| **Độc giả** | Tìm kiếm sách, xem lịch sử mượn |
-
----
-
-## 5.  Giao diện người dùng
-
-### ** Trang chủ**
-- Tìm kiếm sách nhanh
-- Sách mới nhất
-- Thông báo quan trọng
-
-### ** Trang quản lý**
-- Dashboard tổng quan
-- Quản lý danh mục
-- Xử lý giao dịch
-
----
+### 2.6. Quản trị hệ thống
+- Quản lý tài khoản admin / thủ thư.
+- Phân quyền: admin (toàn quyền), thủ thư (quản lý mượn trả, thống kê), độc giả (tra cứu).
 
 
 ---
 
-*Document last updated: $(date)*
+## 3.  Yêu cầu phi chức năng (Non-functional Requirements)
+
+- **Hiệu năng:** xử lý thao tác tìm kiếm/mượn sách trong < 2 giây.
+- **Bảo mật:** mật khẩu hash, phân quyền người dùng.
+- **Khả năng:** mở rộng: dễ bổ sung module (ví dụ: quản lý sách điện tử eBook).
+- **Khả năng:** sử dụng (Usability): giao diện thân thiện, dễ sử dụng với thủ thư và độc giả.
+- **Triển khai:** chạy trên trình duyệt, hỗ trợ cả desktop & mobile (responsive).
+
+---
+
+## 4. Ràng buộc kỹ thuật
+
+- Backend: ASP.NET (MVC hoặc WebForms) với C#.
+- Frontend: HTML5, CSS3, JavaScript.
+- Database: SQL Server (tối thiểu 5 bảng: Sach, DocGia, PhieuMuon, ChiTietPhieuMuon, TaiKhoan).
+- ORM (khuyến khích): Entity Framework.
+- Quản lý source code: GitHub/GitLab.
+
+---
+
+## 5. Deliverables (Kết quả yêu cầu nộp)
+
+1. **Tài liệu yêu cầu (SRS).**
+2. **Thiết kế CSDL:** ERD + script SQL Server.
+3. **Thiết kế UI:** mockup giao diện (quản lý sách, mượn trả, thống kê).
+4. **Source code:** ASP.NET (C#) + SQL Server.
+5. **API Documentation (nếu dùng Web API).
+6. **Tài liệu kiểm thử:** test case, bug report.
+7. **Tài liệu hướng dẫn sử dụng & cài đặt.**
+8. **Báo cáo cuối kỳ + Demo hệ thống.**
