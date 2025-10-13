@@ -25,7 +25,7 @@ Website
 - [ ] JavaScript ( Có thể dùng ASP.NET Razor Pages/ASP.NET MVC )
 
 #### Backend
-- [ ] C# ASP.NET
+- [ ] C# .Net Winforms
 
 ####  Database
 - [ ] SQL Server
