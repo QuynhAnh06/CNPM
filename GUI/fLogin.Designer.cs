@@ -42,6 +42,8 @@
             this.siticoneDragControl2 = new Siticone.Desktop.UI.WinForms.SiticoneDragControl(this.components);
             this.txtUserpwd = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.txtUsername = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.siticoneShadowForm1 = new Siticone.Desktop.UI.WinForms.SiticoneShadowForm(this.components);
+            this.siticoneAnimateWindow1 = new Siticone.Desktop.UI.WinForms.SiticoneAnimateWindow(this.components);
             this.siticonePanel1.SuspendLayout();
             this.siticonePanel2.SuspendLayout();
             this.SuspendLayout();
@@ -50,11 +52,11 @@
             // 
             this.siticoneControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.siticoneControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneControlBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.siticoneControlBox1.IconColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(1031, 0);
+            this.siticoneControlBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
+            this.siticoneControlBox1.Location = new System.Drawing.Point(1031, 12);
             this.siticoneControlBox1.Name = "siticoneControlBox1";
-            this.siticoneControlBox1.Size = new System.Drawing.Size(60, 60);
+            this.siticoneControlBox1.Size = new System.Drawing.Size(47, 48);
             this.siticoneControlBox1.TabIndex = 2;
             // 
             // siticoneControlBox2
@@ -63,16 +65,16 @@
             this.siticoneControlBox2.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.siticoneControlBox2.FillColor = System.Drawing.Color.Transparent;
             this.siticoneControlBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.siticoneControlBox2.IconColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.siticoneControlBox2.Location = new System.Drawing.Point(966, 0);
+            this.siticoneControlBox2.IconColor = System.Drawing.Color.White;
+            this.siticoneControlBox2.Location = new System.Drawing.Point(966, 7);
             this.siticoneControlBox2.Name = "siticoneControlBox2";
-            this.siticoneControlBox2.Size = new System.Drawing.Size(60, 60);
+            this.siticoneControlBox2.Size = new System.Drawing.Size(59, 53);
             this.siticoneControlBox2.TabIndex = 1;
             // 
             // siticonePanel1
             // 
-            this.siticonePanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.siticonePanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
+            this.siticonePanel1.BackColor = System.Drawing.Color.Azure;
+            this.siticonePanel1.BorderColor = System.Drawing.Color.LightCyan;
             this.siticonePanel1.BorderThickness = 1;
             this.siticonePanel1.Controls.Add(this.siticoneSeparator1);
             this.siticonePanel1.Controls.Add(this.butLogin);
@@ -90,7 +92,7 @@
             // 
             // siticoneSeparator1
             // 
-            this.siticoneSeparator1.FillColor = System.Drawing.Color.SlateBlue;
+            this.siticoneSeparator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.siticoneSeparator1.FillThickness = 2;
             this.siticoneSeparator1.Location = new System.Drawing.Point(152, 153);
             this.siticoneSeparator1.Name = "siticoneSeparator1";
@@ -103,7 +105,7 @@
             this.butLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.butLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.butLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.butLogin.FillColor = System.Drawing.Color.SlateBlue;
+            this.butLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.butLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.butLogin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -119,13 +121,12 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SlateBlue;
-            this.label1.Location = new System.Drawing.Point(140, 55);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
+            this.label1.Location = new System.Drawing.Point(212, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(330, 69);
+            this.label1.Size = new System.Drawing.Size(176, 69);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Đăng Nhập";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Text = "Login";
             // 
             // siticoneBorderlessForm1
             // 
@@ -136,13 +137,13 @@
             // 
             // siticonePanel2
             // 
-            this.siticonePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.siticonePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.siticonePanel2.BorderColor = System.Drawing.Color.White;
             this.siticonePanel2.BorderThickness = 2;
             this.siticonePanel2.Controls.Add(this.label2);
             this.siticonePanel2.Controls.Add(this.siticoneControlBox1);
             this.siticonePanel2.Controls.Add(this.siticoneControlBox2);
-            this.siticonePanel2.CustomBorderColor = System.Drawing.Color.SlateBlue;
+            this.siticonePanel2.CustomBorderColor = System.Drawing.Color.Lavender;
             this.siticonePanel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.siticonePanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.siticonePanel2.Location = new System.Drawing.Point(0, 0);
@@ -154,13 +155,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SlateBlue;
-            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(45, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(252, 45);
             this.label2.TabIndex = 3;
             this.label2.Text = "HCMUE LIBRARY";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // siticoneDragControl1
             // 
@@ -176,7 +176,8 @@
             // 
             // txtUserpwd
             // 
-            this.txtUserpwd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.txtUserpwd.BackColor = System.Drawing.SystemColors.Window;
+            this.txtUserpwd.BorderColor = System.Drawing.Color.CornflowerBlue;
             this.txtUserpwd.BorderThickness = 2;
             this.txtUserpwd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUserpwd.DefaultText = "";
@@ -187,13 +188,13 @@
             this.txtUserpwd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
             this.txtUserpwd.FocusedState.ForeColor = System.Drawing.Color.SlateBlue;
             this.txtUserpwd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtUserpwd.ForeColor = System.Drawing.Color.SlateBlue;
+            this.txtUserpwd.ForeColor = System.Drawing.Color.Black;
             this.txtUserpwd.HoverState.BorderColor = System.Drawing.Color.Silver;
-            this.txtUserpwd.IconRight = global::GUI.Properties.Resources.key_icon1;
+            this.txtUserpwd.IconLeft = global::GUI.Properties.Resources.key_icon1;
             this.txtUserpwd.Location = new System.Drawing.Point(152, 269);
             this.txtUserpwd.Name = "txtUserpwd";
             this.txtUserpwd.PasswordChar = '●';
-            this.txtUserpwd.PlaceholderForeColor = System.Drawing.Color.LightSteelBlue;
+            this.txtUserpwd.PlaceholderForeColor = System.Drawing.Color.DarkSlateGray;
             this.txtUserpwd.PlaceholderText = "Password";
             this.txtUserpwd.SelectedText = "";
             this.txtUserpwd.Size = new System.Drawing.Size(297, 50);
@@ -202,8 +203,8 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.AliceBlue;
-            this.txtUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.txtUsername.BackColor = System.Drawing.SystemColors.Window;
+            this.txtUsername.BorderColor = System.Drawing.Color.CornflowerBlue;
             this.txtUsername.BorderThickness = 2;
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.DefaultText = "";
@@ -214,25 +215,34 @@
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
             this.txtUsername.FocusedState.ForeColor = System.Drawing.Color.SlateBlue;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtUsername.ForeColor = System.Drawing.Color.SlateBlue;
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.Silver;
-            this.txtUsername.IconRight = global::GUI.Properties.Resources.user2;
+            this.txtUsername.IconLeft = global::GUI.Properties.Resources.user1;
             this.txtUsername.Location = new System.Drawing.Point(152, 213);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
-            this.txtUsername.PlaceholderForeColor = System.Drawing.Color.LightSteelBlue;
+            this.txtUsername.PlaceholderForeColor = System.Drawing.Color.DarkSlateGray;
             this.txtUsername.PlaceholderText = "Username";
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(297, 50);
             this.txtUsername.TabIndex = 0;
-            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
+            // 
+            // siticoneShadowForm1
+            // 
+            this.siticoneShadowForm1.BorderRadius = 14;
+            this.siticoneShadowForm1.TargetForm = this;
+            // 
+            // siticoneAnimateWindow1
+            // 
+            this.siticoneAnimateWindow1.AnimationType = Siticone.Desktop.UI.WinForms.SiticoneAnimateWindow.AnimateWindowType.AW_BLEND;
+            this.siticoneAnimateWindow1.TargetForm = this;
             // 
             // fLogin
             // 
             this.AcceptButton = this.butLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1090, 715);
             this.Controls.Add(this.siticonePanel2);
             this.Controls.Add(this.siticonePanel1);
@@ -252,7 +262,6 @@
         private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox1;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel1;
         private Siticone.Desktop.UI.WinForms.SiticoneButton butLogin;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox txtUserpwd;
         #endregion
 
         private Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm siticoneBorderlessForm1;
@@ -262,6 +271,9 @@
         private System.Windows.Forms.Label label2;
         private Siticone.Desktop.UI.WinForms.SiticoneSeparator siticoneSeparator1;
         private Siticone.Desktop.UI.WinForms.SiticoneDragControl siticoneDragControl2;
+        private Siticone.Desktop.UI.WinForms.SiticoneTextBox txtUserpwd;
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox txtUsername;
+        private Siticone.Desktop.UI.WinForms.SiticoneShadowForm siticoneShadowForm1;
+        private Siticone.Desktop.UI.WinForms.SiticoneAnimateWindow siticoneAnimateWindow1;
     }
 }
