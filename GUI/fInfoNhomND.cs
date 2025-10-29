@@ -35,5 +35,10 @@ namespace GUI
             f.ShowDialog();
             Bind();
         }
+
+        private void dsChucNang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

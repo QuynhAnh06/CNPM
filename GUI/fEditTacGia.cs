@@ -40,5 +40,10 @@ namespace GUI
                 MessageBox.Show("Lỗi", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

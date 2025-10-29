@@ -84,5 +84,10 @@ namespace GUI
             else MessageBox.Show(res, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             this.Close();
         }
+
+        private void fEditNhomND_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

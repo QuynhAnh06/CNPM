@@ -40,8 +40,11 @@
             this.txtTen = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.labelTitle = new System.Windows.Forms.Label();
             this.siticoneDragControl1 = new Siticone.Desktop.UI.WinForms.SiticoneDragControl(this.components);
+            this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.controlPanel.SuspendLayout();
             this.siticonePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // siticoneBorderlessForm1
@@ -52,14 +55,16 @@
             // 
             // controlPanel
             // 
-            this.controlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.controlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.controlPanel.Controls.Add(this.siticonePictureBox1);
+            this.controlPanel.Controls.Add(this.label2);
             this.controlPanel.Controls.Add(this.miniControlBox);
             this.controlPanel.Controls.Add(this.closeControlBox);
             this.controlPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.controlPanel.Location = new System.Drawing.Point(0, 0);
             this.controlPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.controlPanel.Name = "controlPanel";
-            this.controlPanel.Size = new System.Drawing.Size(586, 54);
+            this.controlPanel.Size = new System.Drawing.Size(586, 72);
             this.controlPanel.TabIndex = 4;
             // 
             // miniControlBox
@@ -67,7 +72,7 @@
             this.miniControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.miniControlBox.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.miniControlBox.FillColor = System.Drawing.Color.Transparent;
-            this.miniControlBox.IconColor = System.Drawing.Color.DarkSlateBlue;
+            this.miniControlBox.IconColor = System.Drawing.Color.White;
             this.miniControlBox.Location = new System.Drawing.Point(463, 0);
             this.miniControlBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.miniControlBox.Name = "miniControlBox";
@@ -78,7 +83,7 @@
             // 
             this.closeControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.closeControlBox.FillColor = System.Drawing.Color.Transparent;
-            this.closeControlBox.IconColor = System.Drawing.Color.DarkSlateBlue;
+            this.closeControlBox.IconColor = System.Drawing.Color.White;
             this.closeControlBox.Location = new System.Drawing.Point(525, 0);
             this.closeControlBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.closeControlBox.Name = "closeControlBox";
@@ -87,7 +92,7 @@
             // 
             // siticonePanel1
             // 
-            this.siticonePanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.siticonePanel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.siticonePanel1.BorderColor = System.Drawing.Color.DarkSlateBlue;
             this.siticonePanel1.BorderRadius = 4;
             this.siticonePanel1.BorderThickness = 1;
@@ -111,7 +116,7 @@
             this.butOK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.butOK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.butOK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.butOK.FillColor = System.Drawing.Color.SlateBlue;
+            this.butOK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.butOK.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butOK.ForeColor = System.Drawing.Color.White;
             this.butOK.Location = new System.Drawing.Point(151, 305);
@@ -128,7 +133,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelMa.AutoSize = true;
             this.labelMa.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMa.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelMa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelMa.Location = new System.Drawing.Point(58, 116);
             this.labelMa.Name = "labelMa";
             this.labelMa.Size = new System.Drawing.Size(114, 27);
@@ -141,7 +146,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(58, 161);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 27);
@@ -176,10 +181,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Segoe UI Variable Display", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.ForeColor = System.Drawing.Color.SlateBlue;
+            this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelTitle.Location = new System.Drawing.Point(89, 38);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(224, 44);
+            this.labelTitle.Size = new System.Drawing.Size(225, 44);
             this.labelTitle.TabIndex = 2;
             this.labelTitle.Text = "SỬA TÁC GIẢ";
             // 
@@ -189,11 +194,34 @@
             this.siticoneDragControl1.TargetControl = this.controlPanel;
             this.siticoneDragControl1.UseTransparentDrag = true;
             // 
+            // siticonePictureBox1
+            // 
+            this.siticonePictureBox1.Image = global::GUI.Properties.Resources.Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh3;
+            this.siticonePictureBox1.ImageRotate = 0F;
+            this.siticonePictureBox1.Location = new System.Drawing.Point(3, 2);
+            this.siticonePictureBox1.Name = "siticonePictureBox1";
+            this.siticonePictureBox1.Size = new System.Drawing.Size(163, 67);
+            this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.siticonePictureBox1.TabIndex = 6;
+            this.siticonePictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(165, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(252, 45);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "HCMUE LIBRARY";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // fEditTacGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.ClientSize = new System.Drawing.Size(586, 559);
             this.Controls.Add(this.siticonePanel1);
             this.Controls.Add(this.controlPanel);
@@ -202,8 +230,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fEditTacGia";
             this.controlPanel.ResumeLayout(false);
+            this.controlPanel.PerformLayout();
             this.siticonePanel1.ResumeLayout(false);
             this.siticonePanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,5 +251,7 @@
         private Siticone.Desktop.UI.WinForms.SiticoneTextBox txtTen;
         private System.Windows.Forms.Label labelTitle;
         private Siticone.Desktop.UI.WinForms.SiticoneDragControl siticoneDragControl1;
+        private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

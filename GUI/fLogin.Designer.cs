@@ -34,18 +34,20 @@
             this.siticonePanel1 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.siticoneSeparator1 = new Siticone.Desktop.UI.WinForms.SiticoneSeparator();
             this.butLogin = new Siticone.Desktop.UI.WinForms.SiticoneButton();
+            this.txtUserpwd = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.txtUsername = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.siticonePanel2 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.siticoneDragControl1 = new Siticone.Desktop.UI.WinForms.SiticoneDragControl(this.components);
             this.siticoneDragControl2 = new Siticone.Desktop.UI.WinForms.SiticoneDragControl(this.components);
-            this.txtUserpwd = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.txtUsername = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.siticoneShadowForm1 = new Siticone.Desktop.UI.WinForms.SiticoneShadowForm(this.components);
             this.siticoneAnimateWindow1 = new Siticone.Desktop.UI.WinForms.SiticoneAnimateWindow(this.components);
             this.siticonePanel1.SuspendLayout();
             this.siticonePanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // siticoneControlBox1
@@ -73,7 +75,7 @@
             // 
             // siticonePanel1
             // 
-            this.siticonePanel1.BackColor = System.Drawing.Color.Azure;
+            this.siticonePanel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.siticonePanel1.BorderColor = System.Drawing.Color.LightCyan;
             this.siticonePanel1.BorderThickness = 1;
             this.siticonePanel1.Controls.Add(this.siticoneSeparator1);
@@ -116,64 +118,6 @@
             this.butLogin.Text = "Login";
             this.butLogin.Click += new System.EventHandler(this.butLogin_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(212, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 69);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Login";
-            // 
-            // siticoneBorderlessForm1
-            // 
-            this.siticoneBorderlessForm1.ContainerControl = this;
-            this.siticoneBorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.siticoneBorderlessForm1.ResizeForm = false;
-            this.siticoneBorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // siticonePanel2
-            // 
-            this.siticonePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
-            this.siticonePanel2.BorderColor = System.Drawing.Color.White;
-            this.siticonePanel2.BorderThickness = 2;
-            this.siticonePanel2.Controls.Add(this.label2);
-            this.siticonePanel2.Controls.Add(this.siticoneControlBox1);
-            this.siticonePanel2.Controls.Add(this.siticoneControlBox2);
-            this.siticonePanel2.CustomBorderColor = System.Drawing.Color.Lavender;
-            this.siticonePanel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.siticonePanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.siticonePanel2.Location = new System.Drawing.Point(0, 0);
-            this.siticonePanel2.Name = "siticonePanel2";
-            this.siticonePanel2.Size = new System.Drawing.Size(1090, 63);
-            this.siticonePanel2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(45, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(252, 45);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "HCMUE LIBRARY";
-            // 
-            // siticoneDragControl1
-            // 
-            this.siticoneDragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.siticoneDragControl1.TargetControl = this;
-            this.siticoneDragControl1.UseTransparentDrag = true;
-            // 
-            // siticoneDragControl2
-            // 
-            this.siticoneDragControl2.DockIndicatorTransparencyValue = 0.6D;
-            this.siticoneDragControl2.TargetControl = this.siticonePanel2;
-            this.siticoneDragControl2.UseTransparentDrag = true;
-            // 
             // txtUserpwd
             // 
             this.txtUserpwd.BackColor = System.Drawing.SystemColors.Window;
@@ -188,13 +132,13 @@
             this.txtUserpwd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
             this.txtUserpwd.FocusedState.ForeColor = System.Drawing.Color.SlateBlue;
             this.txtUserpwd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtUserpwd.ForeColor = System.Drawing.Color.Black;
+            this.txtUserpwd.ForeColor = System.Drawing.Color.LightGray;
             this.txtUserpwd.HoverState.BorderColor = System.Drawing.Color.Silver;
             this.txtUserpwd.IconLeft = global::GUI.Properties.Resources.key_icon1;
             this.txtUserpwd.Location = new System.Drawing.Point(152, 269);
             this.txtUserpwd.Name = "txtUserpwd";
             this.txtUserpwd.PasswordChar = '●';
-            this.txtUserpwd.PlaceholderForeColor = System.Drawing.Color.DarkSlateGray;
+            this.txtUserpwd.PlaceholderForeColor = System.Drawing.Color.LightGray;
             this.txtUserpwd.PlaceholderText = "Password";
             this.txtUserpwd.SelectedText = "";
             this.txtUserpwd.Size = new System.Drawing.Size(297, 50);
@@ -215,17 +159,90 @@
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
             this.txtUsername.FocusedState.ForeColor = System.Drawing.Color.SlateBlue;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtUsername.ForeColor = System.Drawing.Color.Black;
+            this.txtUsername.ForeColor = System.Drawing.Color.Silver;
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.Silver;
             this.txtUsername.IconLeft = global::GUI.Properties.Resources.user1;
             this.txtUsername.Location = new System.Drawing.Point(152, 213);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
-            this.txtUsername.PlaceholderForeColor = System.Drawing.Color.DarkSlateGray;
+            this.txtUsername.PlaceholderForeColor = System.Drawing.Color.LightGray;
             this.txtUsername.PlaceholderText = "Username";
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(297, 50);
             this.txtUsername.TabIndex = 0;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.Location = new System.Drawing.Point(212, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 69);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Login";
+            // 
+            // siticoneBorderlessForm1
+            // 
+            this.siticoneBorderlessForm1.ContainerControl = this;
+            this.siticoneBorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.siticoneBorderlessForm1.ResizeForm = false;
+            this.siticoneBorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // siticonePanel2
+            // 
+            this.siticonePanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.siticonePanel2.BorderColor = System.Drawing.Color.White;
+            this.siticonePanel2.BorderThickness = 2;
+            this.siticonePanel2.Controls.Add(this.siticonePictureBox1);
+            this.siticonePanel2.Controls.Add(this.label2);
+            this.siticonePanel2.Controls.Add(this.siticoneControlBox1);
+            this.siticonePanel2.Controls.Add(this.siticoneControlBox2);
+            this.siticonePanel2.CustomBorderColor = System.Drawing.Color.Lavender;
+            this.siticonePanel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.siticonePanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.siticonePanel2.Location = new System.Drawing.Point(0, 0);
+            this.siticonePanel2.Name = "siticonePanel2";
+            this.siticonePanel2.Size = new System.Drawing.Size(1090, 89);
+            this.siticonePanel2.TabIndex = 3;
+            // 
+            // siticonePictureBox1
+            // 
+            this.siticonePictureBox1.Image = global::GUI.Properties.Resources.Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh3;
+            this.siticonePictureBox1.ImageRotate = 0F;
+            this.siticonePictureBox1.Location = new System.Drawing.Point(12, 3);
+            this.siticonePictureBox1.Name = "siticonePictureBox1";
+            this.siticonePictureBox1.Size = new System.Drawing.Size(195, 83);
+            this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.siticonePictureBox1.TabIndex = 4;
+            this.siticonePictureBox1.TabStop = false;
+            this.siticonePictureBox1.Click += new System.EventHandler(this.siticonePictureBox1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(237, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(252, 45);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "HCMUE LIBRARY";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // siticoneDragControl1
+            // 
+            this.siticoneDragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.siticoneDragControl1.TargetControl = this;
+            this.siticoneDragControl1.UseTransparentDrag = true;
+            // 
+            // siticoneDragControl2
+            // 
+            this.siticoneDragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.siticoneDragControl2.TargetControl = this.siticonePanel2;
+            this.siticoneDragControl2.UseTransparentDrag = true;
             // 
             // siticoneShadowForm1
             // 
@@ -242,7 +259,7 @@
             this.AcceptButton = this.butLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.ClientSize = new System.Drawing.Size(1090, 715);
             this.Controls.Add(this.siticonePanel2);
             this.Controls.Add(this.siticonePanel1);
@@ -255,6 +272,7 @@
             this.siticonePanel1.PerformLayout();
             this.siticonePanel2.ResumeLayout(false);
             this.siticonePanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -271,9 +289,10 @@
         private System.Windows.Forms.Label label2;
         private Siticone.Desktop.UI.WinForms.SiticoneSeparator siticoneSeparator1;
         private Siticone.Desktop.UI.WinForms.SiticoneDragControl siticoneDragControl2;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox txtUserpwd;
-        private Siticone.Desktop.UI.WinForms.SiticoneTextBox txtUsername;
         private Siticone.Desktop.UI.WinForms.SiticoneShadowForm siticoneShadowForm1;
         private Siticone.Desktop.UI.WinForms.SiticoneAnimateWindow siticoneAnimateWindow1;
+        private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox1;
+        private Siticone.Desktop.UI.WinForms.SiticoneTextBox txtUserpwd;
+        private Siticone.Desktop.UI.WinForms.SiticoneTextBox txtUsername;
     }
 }

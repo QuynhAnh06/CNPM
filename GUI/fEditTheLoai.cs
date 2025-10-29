@@ -44,5 +44,10 @@ namespace GUI
             else
                 MessageBox.Show("Lỗi", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void fEditTheLoai_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

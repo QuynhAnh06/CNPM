@@ -110,5 +110,20 @@ namespace GUI
             labelTenCS.Text = "Tên: " + cuonsach.SACH.TUASACH.TenTuaSach;
             labelTheLoai.Text = "Thể loại: " + cuonsach.SACH.TUASACH.THELOAI.TenTheLoai;
         }
+
+        private void labelTongNoHienTai_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneControlBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticonePanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

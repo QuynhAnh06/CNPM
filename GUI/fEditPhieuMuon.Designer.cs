@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
-            this.siticoneControlBox2 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
-            this.siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             this.siticoneDragControl1 = new Siticone.Desktop.UI.WinForms.SiticoneDragControl(this.components);
             this.mainPanel = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.labelNgayTra = new System.Windows.Forms.Label();
@@ -61,7 +59,14 @@
             this.labelMaCS = new System.Windows.Forms.Label();
             this.labelSoPhieu = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.miniControlBox = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
+            this.closeControlBox = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
+            this.controlPanel = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.mainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
+            this.controlPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticoneBorderlessForm1
@@ -69,29 +74,6 @@
             this.siticoneBorderlessForm1.ContainerControl = this;
             this.siticoneBorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.siticoneBorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // siticoneControlBox2
-            // 
-            this.siticoneControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneControlBox2.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.siticoneControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.siticoneControlBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.siticoneControlBox2.IconColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.siticoneControlBox2.Location = new System.Drawing.Point(1080, -1);
-            this.siticoneControlBox2.Name = "siticoneControlBox2";
-            this.siticoneControlBox2.Size = new System.Drawing.Size(60, 60);
-            this.siticoneControlBox2.TabIndex = 68;
-            // 
-            // siticoneControlBox1
-            // 
-            this.siticoneControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.siticoneControlBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.siticoneControlBox1.IconColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(1140, -1);
-            this.siticoneControlBox1.Name = "siticoneControlBox1";
-            this.siticoneControlBox1.Size = new System.Drawing.Size(60, 60);
-            this.siticoneControlBox1.TabIndex = 69;
             // 
             // siticoneDragControl1
             // 
@@ -101,8 +83,8 @@
             // 
             // mainPanel
             // 
-            this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.mainPanel.BorderColor = System.Drawing.Color.DarkSlateBlue;
+            this.mainPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.mainPanel.BorderColor = System.Drawing.Color.MidnightBlue;
             this.mainPanel.BorderRadius = 4;
             this.mainPanel.BorderThickness = 1;
             this.mainPanel.Controls.Add(this.labelNgayTra);
@@ -158,7 +140,7 @@
             this.isDaTra.CheckMarkColor = System.Drawing.Color.Violet;
             this.isDaTra.Cursor = System.Windows.Forms.Cursors.Hand;
             this.isDaTra.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F);
-            this.isDaTra.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.isDaTra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.isDaTra.Location = new System.Drawing.Point(331, 583);
             this.isDaTra.Name = "isDaTra";
             this.isDaTra.Size = new System.Drawing.Size(97, 35);
@@ -172,7 +154,7 @@
             // 
             // siticoneVSeparator2
             // 
-            this.siticoneVSeparator2.FillColor = System.Drawing.Color.DarkSlateBlue;
+            this.siticoneVSeparator2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.siticoneVSeparator2.FillThickness = 2;
             this.siticoneVSeparator2.Location = new System.Drawing.Point(500, 442);
             this.siticoneVSeparator2.Name = "siticoneVSeparator2";
@@ -185,7 +167,7 @@
             this.butSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.butSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.butSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.butSave.FillColor = System.Drawing.Color.SlateBlue;
+            this.butSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.butSave.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butSave.ForeColor = System.Drawing.Color.White;
             this.butSave.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -201,7 +183,7 @@
             this.dateNgayTra.Checked = true;
             this.dateNgayTra.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.dateNgayTra.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateNgayTra.ForeColor = System.Drawing.Color.SlateBlue;
+            this.dateNgayTra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.dateNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateNgayTra.Location = new System.Drawing.Point(122, 568);
             this.dateNgayTra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -217,7 +199,7 @@
             // 
             this.labelNgayMuon.AutoSize = true;
             this.labelNgayMuon.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNgayMuon.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelNgayMuon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelNgayMuon.Location = new System.Drawing.Point(117, 482);
             this.labelNgayMuon.Name = "labelNgayMuon";
             this.labelNgayMuon.Size = new System.Drawing.Size(126, 27);
@@ -228,7 +210,7 @@
             // 
             this.labelHanTra.AutoSize = true;
             this.labelHanTra.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHanTra.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelHanTra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelHanTra.Location = new System.Drawing.Point(307, 482);
             this.labelHanTra.Name = "labelHanTra";
             this.labelHanTra.Size = new System.Drawing.Size(126, 27);
@@ -239,7 +221,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.label16.Location = new System.Drawing.Point(119, 542);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(79, 24);
@@ -250,7 +232,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.label11.Location = new System.Drawing.Point(309, 449);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(88, 31);
@@ -261,7 +243,7 @@
             // 
             this.labelTienPhat.AutoSize = true;
             this.labelTienPhat.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTienPhat.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelTienPhat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelTienPhat.Location = new System.Drawing.Point(582, 552);
             this.labelTienPhat.Name = "labelTienPhat";
             this.labelTienPhat.Size = new System.Drawing.Size(116, 31);
@@ -272,7 +254,7 @@
             // 
             this.labelDonGiaPhat.AutoSize = true;
             this.labelDonGiaPhat.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDonGiaPhat.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelDonGiaPhat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelDonGiaPhat.Location = new System.Drawing.Point(582, 497);
             this.labelDonGiaPhat.Name = "labelDonGiaPhat";
             this.labelDonGiaPhat.Size = new System.Drawing.Size(154, 31);
@@ -283,7 +265,7 @@
             // 
             this.labelTongNoMoi.AutoSize = true;
             this.labelTongNoMoi.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTongNoMoi.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelTongNoMoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelTongNoMoi.Location = new System.Drawing.Point(582, 607);
             this.labelTongNoMoi.Name = "labelTongNoMoi";
             this.labelTongNoMoi.Size = new System.Drawing.Size(155, 31);
@@ -294,7 +276,7 @@
             // 
             this.labelSoNgayTre.AutoSize = true;
             this.labelSoNgayTre.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSoNgayTre.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelSoNgayTre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelSoNgayTre.Location = new System.Drawing.Point(582, 442);
             this.labelSoNgayTre.Name = "labelSoNgayTre";
             this.labelSoNgayTre.Size = new System.Drawing.Size(177, 31);
@@ -305,7 +287,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.label12.Location = new System.Drawing.Point(119, 447);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(132, 31);
@@ -314,7 +296,7 @@
             // 
             // siticoneVSeparator1
             // 
-            this.siticoneVSeparator1.FillColor = System.Drawing.Color.DarkSlateBlue;
+            this.siticoneVSeparator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.siticoneVSeparator1.FillThickness = 2;
             this.siticoneVSeparator1.Location = new System.Drawing.Point(499, 162);
             this.siticoneVSeparator1.Name = "siticoneVSeparator1";
@@ -323,7 +305,7 @@
             // 
             // siticoneSeparator2
             // 
-            this.siticoneSeparator2.FillColor = System.Drawing.Color.DarkSlateBlue;
+            this.siticoneSeparator2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.siticoneSeparator2.Location = new System.Drawing.Point(213, 363);
             this.siticoneSeparator2.Name = "siticoneSeparator2";
             this.siticoneSeparator2.Size = new System.Drawing.Size(568, 28);
@@ -333,7 +315,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.SlateBlue;
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.label13.Location = new System.Drawing.Point(612, 140);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(253, 40);
@@ -344,7 +326,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.SlateBlue;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.label8.Location = new System.Drawing.Point(382, 394);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(236, 37);
@@ -355,7 +337,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.SlateBlue;
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.label10.Location = new System.Drawing.Point(138, 140);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(290, 40);
@@ -366,7 +348,7 @@
             // 
             this.labelMaDG.AutoSize = true;
             this.labelMaDG.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaDG.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelMaDG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelMaDG.Location = new System.Drawing.Point(586, 213);
             this.labelMaDG.Name = "labelMaDG";
             this.labelMaDG.Size = new System.Drawing.Size(128, 31);
@@ -377,7 +359,7 @@
             // 
             this.labelTheLoai.AutoSize = true;
             this.labelTheLoai.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTheLoai.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelTheLoai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelTheLoai.Location = new System.Drawing.Point(116, 317);
             this.labelTheLoai.Name = "labelTheLoai";
             this.labelTheLoai.Size = new System.Drawing.Size(106, 31);
@@ -388,7 +370,7 @@
             // 
             this.labelTongNoHienTai.AutoSize = true;
             this.labelTongNoHienTai.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTongNoHienTai.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelTongNoHienTai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelTongNoHienTai.Location = new System.Drawing.Point(586, 317);
             this.labelTongNoHienTai.Name = "labelTongNoHienTai";
             this.labelTongNoHienTai.Size = new System.Drawing.Size(195, 31);
@@ -399,7 +381,7 @@
             // 
             this.labelHoTen.AutoSize = true;
             this.labelHoTen.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHoTen.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelHoTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelHoTen.Location = new System.Drawing.Point(586, 265);
             this.labelHoTen.Name = "labelHoTen";
             this.labelHoTen.Size = new System.Drawing.Size(93, 31);
@@ -410,7 +392,7 @@
             // 
             this.labelTenCS.AutoSize = true;
             this.labelTenCS.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenCS.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelTenCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelTenCS.Location = new System.Drawing.Point(116, 265);
             this.labelTenCS.Name = "labelTenCS";
             this.labelTenCS.Size = new System.Drawing.Size(59, 31);
@@ -421,7 +403,7 @@
             // 
             this.labelMaCS.AutoSize = true;
             this.labelMaCS.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaCS.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelMaCS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelMaCS.Location = new System.Drawing.Point(116, 213);
             this.labelMaCS.Name = "labelMaCS";
             this.labelMaCS.Size = new System.Drawing.Size(164, 31);
@@ -432,7 +414,7 @@
             // 
             this.labelSoPhieu.AutoSize = true;
             this.labelSoPhieu.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSoPhieu.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelSoPhieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelSoPhieu.Location = new System.Drawing.Point(394, 85);
             this.labelSoPhieu.Name = "labelSoPhieu";
             this.labelSoPhieu.Size = new System.Drawing.Size(100, 27);
@@ -443,7 +425,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SlateBlue;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(299, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(394, 57);
@@ -451,20 +433,79 @@
             this.label1.Text = "PHIẾU MƯỢN TRẢ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(161, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(239, 38);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "HCMUE LIBRARY";
+            this.label2.UseMnemonic = false;
+            // 
+            // siticonePictureBox1
+            // 
+            this.siticonePictureBox1.Image = global::GUI.Properties.Resources.Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh4;
+            this.siticonePictureBox1.ImageRotate = 0F;
+            this.siticonePictureBox1.Location = new System.Drawing.Point(12, 7);
+            this.siticonePictureBox1.Name = "siticonePictureBox1";
+            this.siticonePictureBox1.Size = new System.Drawing.Size(143, 73);
+            this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.siticonePictureBox1.TabIndex = 1;
+            this.siticonePictureBox1.TabStop = false;
+            // 
+            // miniControlBox
+            // 
+            this.miniControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.miniControlBox.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.miniControlBox.FillColor = System.Drawing.Color.Transparent;
+            this.miniControlBox.IconColor = System.Drawing.Color.White;
+            this.miniControlBox.Location = new System.Drawing.Point(1089, 12);
+            this.miniControlBox.Name = "miniControlBox";
+            this.miniControlBox.Size = new System.Drawing.Size(48, 42);
+            this.miniControlBox.TabIndex = 0;
+            // 
+            // closeControlBox
+            // 
+            this.closeControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeControlBox.FillColor = System.Drawing.Color.Transparent;
+            this.closeControlBox.IconColor = System.Drawing.Color.White;
+            this.closeControlBox.Location = new System.Drawing.Point(1139, 12);
+            this.closeControlBox.Name = "closeControlBox";
+            this.closeControlBox.Size = new System.Drawing.Size(49, 42);
+            this.closeControlBox.TabIndex = 0;
+            // 
+            // controlPanel
+            // 
+            this.controlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.controlPanel.Controls.Add(this.label2);
+            this.controlPanel.Controls.Add(this.siticonePictureBox1);
+            this.controlPanel.Controls.Add(this.miniControlBox);
+            this.controlPanel.Controls.Add(this.closeControlBox);
+            this.controlPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.controlPanel.Location = new System.Drawing.Point(0, 0);
+            this.controlPanel.Name = "controlPanel";
+            this.controlPanel.Size = new System.Drawing.Size(1200, 83);
+            this.controlPanel.TabIndex = 71;
+            // 
             // fEditPhieuMuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.ClientSize = new System.Drawing.Size(1200, 915);
+            this.Controls.Add(this.controlPanel);
             this.Controls.Add(this.mainPanel);
-            this.Controls.Add(this.siticoneControlBox2);
-            this.Controls.Add(this.siticoneControlBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fEditPhieuMuon";
             this.Text = "fEditPhieuMuon";
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();
+            this.controlPanel.ResumeLayout(false);
+            this.controlPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -472,8 +513,6 @@
         #endregion
 
         private Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm siticoneBorderlessForm1;
-        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox2;
-        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox1;
         private Siticone.Desktop.UI.WinForms.SiticonePanel mainPanel;
         private Siticone.Desktop.UI.WinForms.SiticoneDragControl siticoneDragControl1;
         private System.Windows.Forms.Label label1;
@@ -503,5 +542,10 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label labelNgayMuon;
         private System.Windows.Forms.Label labelNgayTra;
+        private Siticone.Desktop.UI.WinForms.SiticonePanel controlPanel;
+        private System.Windows.Forms.Label label2;
+        private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox1;
+        private Siticone.Desktop.UI.WinForms.SiticoneControlBox miniControlBox;
+        private Siticone.Desktop.UI.WinForms.SiticoneControlBox closeControlBox;
     }
 }

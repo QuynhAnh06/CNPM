@@ -60,5 +60,10 @@ namespace GUI
             else MessageBox.Show(res, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             this.Close();
         }
+
+        private void dsChucNang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

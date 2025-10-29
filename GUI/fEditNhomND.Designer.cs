@@ -32,9 +32,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
-            this.siticoneControlBox2 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
-            this.siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             this.siticonePanel1 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.dsChucNang = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
             this.isChoosen = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -48,9 +47,16 @@
             this.labelMaNND = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cHUCNANGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label12 = new System.Windows.Forms.Label();
+            this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.miniControlBox = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
+            this.closeControlBox = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
+            this.controlPanel = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.siticonePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsChucNang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHUCNANGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
+            this.controlPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticoneBorderlessForm1
@@ -59,32 +65,9 @@
             this.siticoneBorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.siticoneBorderlessForm1.TransparentWhileDrag = true;
             // 
-            // siticoneControlBox2
-            // 
-            this.siticoneControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneControlBox2.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.siticoneControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.siticoneControlBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.siticoneControlBox2.IconColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.siticoneControlBox2.Location = new System.Drawing.Point(751, -1);
-            this.siticoneControlBox2.Name = "siticoneControlBox2";
-            this.siticoneControlBox2.Size = new System.Drawing.Size(55, 45);
-            this.siticoneControlBox2.TabIndex = 12;
-            // 
-            // siticoneControlBox1
-            // 
-            this.siticoneControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
-            this.siticoneControlBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.siticoneControlBox1.IconColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(806, -1);
-            this.siticoneControlBox1.Name = "siticoneControlBox1";
-            this.siticoneControlBox1.Size = new System.Drawing.Size(57, 45);
-            this.siticoneControlBox1.TabIndex = 13;
-            // 
             // siticonePanel1
             // 
-            this.siticonePanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.siticonePanel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.siticonePanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(196)))), ((int)(((byte)(255)))));
             this.siticonePanel1.BorderThickness = 2;
             this.siticonePanel1.Controls.Add(this.dsChucNang);
@@ -93,10 +76,10 @@
             this.siticonePanel1.Controls.Add(this.txtTenNhom);
             this.siticonePanel1.Controls.Add(this.labelMaNND);
             this.siticonePanel1.Controls.Add(this.label2);
-            this.siticonePanel1.Location = new System.Drawing.Point(83, 72);
+            this.siticonePanel1.Location = new System.Drawing.Point(84, 106);
             this.siticonePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.siticonePanel1.Name = "siticonePanel1";
-            this.siticonePanel1.Size = new System.Drawing.Size(696, 650);
+            this.siticonePanel1.Size = new System.Drawing.Size(695, 616);
             this.siticonePanel1.TabIndex = 14;
             // 
             // dsChucNang
@@ -105,7 +88,7 @@
             this.dsChucNang.AllowUserToDeleteRows = false;
             this.dsChucNang.AllowUserToResizeColumns = false;
             this.dsChucNang.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
@@ -113,10 +96,10 @@
             this.dsChucNang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dsChucNang.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SlateBlue;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SlateBlue;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSlateGray;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dsChucNang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -140,7 +123,12 @@
             this.dsChucNang.Location = new System.Drawing.Point(87, 252);
             this.dsChucNang.Name = "dsChucNang";
             this.dsChucNang.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dsChucNang.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dsChucNang.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dsChucNang.RowHeadersVisible = false;
             this.dsChucNang.RowHeadersWidth = 51;
             this.dsChucNang.RowTemplate.Height = 30;
@@ -210,7 +198,7 @@
             this.butSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.butSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.butSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.butSave.FillColor = System.Drawing.Color.SlateBlue;
+            this.butSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.butSave.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butSave.ForeColor = System.Drawing.Color.White;
             this.butSave.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -227,10 +215,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SlateBlue;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(129, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(438, 46);
+            this.label1.Size = new System.Drawing.Size(426, 44);
             this.label1.TabIndex = 5;
             this.label1.Text = "SỬA NHÓM NGƯỜI DÙNG";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -258,7 +246,7 @@
             // 
             this.labelMaNND.AutoSize = true;
             this.labelMaNND.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaNND.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.labelMaNND.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.labelMaNND.Location = new System.Drawing.Point(184, 73);
             this.labelMaNND.Name = "labelMaNND";
             this.labelMaNND.Size = new System.Drawing.Size(225, 27);
@@ -269,7 +257,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
             this.label2.Location = new System.Drawing.Point(133, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(180, 22);
@@ -280,24 +268,84 @@
             // 
             this.cHUCNANGBindingSource.DataSource = typeof(DTO.CHUCNANG);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label12.Location = new System.Drawing.Point(161, 27);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(239, 38);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "HCMUE LIBRARY";
+            this.label12.UseMnemonic = false;
+            // 
+            // siticonePictureBox1
+            // 
+            this.siticonePictureBox1.Image = global::GUI.Properties.Resources.Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh4;
+            this.siticonePictureBox1.ImageRotate = 0F;
+            this.siticonePictureBox1.Location = new System.Drawing.Point(12, 7);
+            this.siticonePictureBox1.Name = "siticonePictureBox1";
+            this.siticonePictureBox1.Size = new System.Drawing.Size(143, 73);
+            this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.siticonePictureBox1.TabIndex = 1;
+            this.siticonePictureBox1.TabStop = false;
+            // 
+            // miniControlBox
+            // 
+            this.miniControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.miniControlBox.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.miniControlBox.FillColor = System.Drawing.Color.Transparent;
+            this.miniControlBox.IconColor = System.Drawing.Color.White;
+            this.miniControlBox.Location = new System.Drawing.Point(751, 12);
+            this.miniControlBox.Name = "miniControlBox";
+            this.miniControlBox.Size = new System.Drawing.Size(48, 42);
+            this.miniControlBox.TabIndex = 0;
+            // 
+            // closeControlBox
+            // 
+            this.closeControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeControlBox.FillColor = System.Drawing.Color.Transparent;
+            this.closeControlBox.IconColor = System.Drawing.Color.White;
+            this.closeControlBox.Location = new System.Drawing.Point(801, 12);
+            this.closeControlBox.Name = "closeControlBox";
+            this.closeControlBox.Size = new System.Drawing.Size(49, 42);
+            this.closeControlBox.TabIndex = 0;
+            // 
+            // controlPanel
+            // 
+            this.controlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.controlPanel.Controls.Add(this.label12);
+            this.controlPanel.Controls.Add(this.siticonePictureBox1);
+            this.controlPanel.Controls.Add(this.miniControlBox);
+            this.controlPanel.Controls.Add(this.closeControlBox);
+            this.controlPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.controlPanel.Location = new System.Drawing.Point(0, 0);
+            this.controlPanel.Name = "controlPanel";
+            this.controlPanel.Size = new System.Drawing.Size(862, 83);
+            this.controlPanel.TabIndex = 15;
+            // 
             // fEditNhomND
             // 
             this.AcceptButton = this.butSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.ClientSize = new System.Drawing.Size(862, 795);
+            this.Controls.Add(this.controlPanel);
             this.Controls.Add(this.siticonePanel1);
-            this.Controls.Add(this.siticoneControlBox2);
-            this.Controls.Add(this.siticoneControlBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fEditNhomND";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fEditNhomND";
+            this.Load += new System.EventHandler(this.fEditNhomND_Load);
             this.siticonePanel1.ResumeLayout(false);
             this.siticonePanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dsChucNang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHUCNANGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();
+            this.controlPanel.ResumeLayout(false);
+            this.controlPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -305,8 +353,6 @@
         #endregion
 
         private Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm siticoneBorderlessForm1;
-        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox2;
-        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox1;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel1;
         private Siticone.Desktop.UI.WinForms.SiticoneDataGridView dsChucNang;
         private Siticone.Desktop.UI.WinForms.SiticoneButton butSave;
@@ -320,5 +366,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaChucNang;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenChucNang;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenManHinh;
+        private Siticone.Desktop.UI.WinForms.SiticonePanel controlPanel;
+        private System.Windows.Forms.Label label12;
+        private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox1;
+        private Siticone.Desktop.UI.WinForms.SiticoneControlBox miniControlBox;
+        private Siticone.Desktop.UI.WinForms.SiticoneControlBox closeControlBox;
     }
 }

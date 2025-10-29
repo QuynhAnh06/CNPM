@@ -33,5 +33,10 @@ namespace GUI
                 dataGrid.Rows.Add(ct.SACH.MaSach, ct.SACH.TUASACH.TenTuaSach, ct.SACH.DonGia, ct.SoLuongNhap, ct.ThanhTien);
             }
         }
+
+        private void dataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

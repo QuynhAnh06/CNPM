@@ -612,6 +612,17 @@
     <Content Include="images\thaydoiquydinh.png" />
     <Content Include="images\user_icon.png" />
     <Content Include="images\user_icon02.png" />
+    <None Include="Resources\user.jpg" />
+    <None Include="Resources\key_icon.png" />
+    <None Include="Resources\Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh.svg.png" />
+    <None Include="Resources\Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh.svg1.png" />
+    <None Include="Resources\Screenshot 2025-10-25 173459.png" />
+    <None Include="Resources\Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh.svg2.png" />
+    <None Include="Resources\Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh.svg3.png" />
+    <None Include="Resources\Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh.svg4.png" />
+    <None Include="Resources\Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh.svg5.png" />
+    <None Include="Resources\Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh.svg6.png" />
+    <None Include="Resources\Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh.svg7.png" />
     <Content Include="Resources\user_icon03.png" />
     <None Include="images\white_key_icon.png" />
     <None Include="Resources\69539.png" />

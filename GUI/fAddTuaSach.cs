@@ -103,5 +103,10 @@ namespace GUI
         {
             
         }
+
+        private void comboTheLoai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -63,6 +63,9 @@ namespace GUI
 
         }
 
-       
+        private void SachGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

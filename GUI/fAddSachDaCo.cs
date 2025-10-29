@@ -124,5 +124,30 @@ namespace GUI
             }
             labelTongTien.Text = "Tổng tiền: " + TongTien;
         }
+
+        private void SachGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void closeControlBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void miniControlBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void controlPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

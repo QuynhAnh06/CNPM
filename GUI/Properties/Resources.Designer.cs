@@ -163,6 +163,96 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap key_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("key_icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh_svg {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh1 {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh2 {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh3 {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh4 {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh5 {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh6 {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh7 {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap phieumuontra {
             get {
                 object obj = ResourceManager.GetObject("phieumuontra", resourceCulture);
@@ -176,6 +266,16 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap Plus_icon {
             get {
                 object obj = ResourceManager.GetObject("Plus_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_10_25_173459 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-10-25 173459", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +306,16 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap user_icon {
             get {
                 object obj = ResourceManager.GetObject("user_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user1 {
+            get {
+                object obj = ResourceManager.GetObject("user1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

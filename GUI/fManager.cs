@@ -117,5 +117,9 @@ namespace GUI
             if (res == DialogResult.Yes) this.Close();
         }
 
+        private void tabBC_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

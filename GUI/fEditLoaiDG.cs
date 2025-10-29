@@ -38,5 +38,10 @@ namespace GUI
             if (err == "") MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else MessageBox.Show(err, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void miniControlBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

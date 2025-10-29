@@ -63,5 +63,9 @@ namespace GUI
             con[0].BringToFront();
         }
 
+        private void topPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -34,22 +34,24 @@ namespace GUI
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fManager));
             this.siticoneBorderlessForm1 = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
-            this.exitControlBox = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
-            this.siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
-            this.topPanel = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tabControl = new Siticone.Desktop.UI.WinForms.SiticoneTabControl();
-            this.tabAccount = new System.Windows.Forms.TabPage();
-            this.tabQLDG = new System.Windows.Forms.TabPage();
-            this.tabQLS = new System.Windows.Forms.TabPage();
-            this.tabQLMT = new System.Windows.Forms.TabPage();
-            this.tabQLPT = new System.Windows.Forms.TabPage();
-            this.tabBC = new System.Windows.Forms.TabPage();
-            this.tabQLND = new System.Windows.Forms.TabPage();
-            this.tabTDQD = new System.Windows.Forms.TabPage();
             this.iconList = new System.Windows.Forms.ImageList(this.components);
+            this.topPanel = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
+            this.exitControlBox = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabQLND = new System.Windows.Forms.TabPage();
+            this.tabBC = new System.Windows.Forms.TabPage();
+            this.tabQLPT = new System.Windows.Forms.TabPage();
+            this.tabControl = new Siticone.Desktop.UI.WinForms.SiticoneTabControl();
+            this.tabQLMT = new System.Windows.Forms.TabPage();
+            this.tabQLS = new System.Windows.Forms.TabPage();
+            this.tabQLDG = new System.Windows.Forms.TabPage();
+            this.tabAccount = new System.Windows.Forms.TabPage();
+            this.tabTDQD = new System.Windows.Forms.TabPage();
+            this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
             this.topPanel.SuspendLayout();
             this.tabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // siticoneBorderlessForm1
@@ -58,6 +60,51 @@ namespace GUI
             this.siticoneBorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.siticoneBorderlessForm1.ResizeForm = false;
             this.siticoneBorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // iconList
+            // 
+            this.iconList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iconList.ImageStream")));
+            this.iconList.TransparentColor = System.Drawing.Color.SlateBlue;
+            this.iconList.Images.SetKeyName(0, "docgia.png");
+            this.iconList.Images.SetKeyName(1, "nguoidung.png");
+            this.iconList.Images.SetKeyName(2, "phieumuontra.png");
+            this.iconList.Images.SetKeyName(3, "phieuthu.png");
+            this.iconList.Images.SetKeyName(4, "report_icon.png");
+            this.iconList.Images.SetKeyName(5, "sach.png");
+            this.iconList.Images.SetKeyName(6, "taikhoan.png");
+            this.iconList.Images.SetKeyName(7, "thaydoiquydinh.png");
+            // 
+            // topPanel
+            // 
+            this.topPanel.BackColor = System.Drawing.Color.White;
+            this.topPanel.Controls.Add(this.siticonePictureBox1);
+            this.topPanel.Controls.Add(this.label2);
+            this.topPanel.Controls.Add(this.exitControlBox);
+            this.topPanel.Controls.Add(this.siticoneControlBox1);
+            this.topPanel.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.topPanel.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.topPanel.ForeColor = System.Drawing.Color.White;
+            this.topPanel.Location = new System.Drawing.Point(0, 0);
+            this.topPanel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.topPanel.Name = "topPanel";
+            this.topPanel.Size = new System.Drawing.Size(1235, 70);
+            this.topPanel.TabIndex = 1;
+            // 
+            // siticoneControlBox1
+            // 
+            this.siticoneControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.siticoneControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneControlBox1.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.siticoneControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.siticoneControlBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
+            this.siticoneControlBox1.Location = new System.Drawing.Point(1089, 0);
+            this.siticoneControlBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.siticoneControlBox1.Name = "siticoneControlBox1";
+            this.siticoneControlBox1.Size = new System.Drawing.Size(75, 71);
+            this.siticoneControlBox1.TabIndex = 0;
             // 
             // exitControlBox
             // 
@@ -74,48 +121,55 @@ namespace GUI
             this.exitControlBox.TabIndex = 0;
             this.exitControlBox.Click += new System.EventHandler(this.exitControlBox_Click);
             // 
-            // siticoneControlBox1
-            // 
-            this.siticoneControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneControlBox1.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.siticoneControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneControlBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(1089, 0);
-            this.siticoneControlBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.siticoneControlBox1.Name = "siticoneControlBox1";
-            this.siticoneControlBox1.Size = new System.Drawing.Size(75, 71);
-            this.siticoneControlBox1.TabIndex = 0;
-            // 
-            // topPanel
-            // 
-            this.topPanel.BackColor = System.Drawing.Color.White;
-            this.topPanel.Controls.Add(this.label2);
-            this.topPanel.Controls.Add(this.exitControlBox);
-            this.topPanel.Controls.Add(this.siticoneControlBox1);
-            this.topPanel.CustomBorderColor = System.Drawing.Color.DarkSlateBlue;
-            this.topPanel.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topPanel.FillColor = System.Drawing.Color.SlateBlue;
-            this.topPanel.ForeColor = System.Drawing.Color.White;
-            this.topPanel.Location = new System.Drawing.Point(0, 0);
-            this.topPanel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1235, 70);
-            this.topPanel.TabIndex = 1;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.SlateBlue;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 9);
+            this.label2.Location = new System.Drawing.Point(186, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(226, 52);
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.Size = new System.Drawing.Size(292, 52);
             this.label2.TabIndex = 4;
-            this.label2.Text = "UIT LIBRARY";
+            this.label2.Text = "HCMUE LIBRARY";
+            // 
+            // tabQLND
+            // 
+            this.tabQLND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.tabQLND.ImageIndex = 1;
+            this.tabQLND.Location = new System.Drawing.Point(544, 4);
+            this.tabQLND.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabQLND.Name = "tabQLND";
+            this.tabQLND.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabQLND.Size = new System.Drawing.Size(687, 799);
+            this.tabQLND.TabIndex = 6;
+            this.tabQLND.Text = "Người dùng";
+            // 
+            // tabBC
+            // 
+            this.tabBC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.tabBC.ImageIndex = 4;
+            this.tabBC.Location = new System.Drawing.Point(544, 4);
+            this.tabBC.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabBC.Name = "tabBC";
+            this.tabBC.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabBC.Size = new System.Drawing.Size(687, 799);
+            this.tabBC.TabIndex = 5;
+            this.tabBC.Text = "Báo cáo thống kê";
+            this.tabBC.Click += new System.EventHandler(this.tabBC_Click);
+            // 
+            // tabQLPT
+            // 
+            this.tabQLPT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.tabQLPT.ImageIndex = 3;
+            this.tabQLPT.Location = new System.Drawing.Point(544, 4);
+            this.tabQLPT.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabQLPT.Name = "tabQLPT";
+            this.tabQLPT.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabQLPT.Size = new System.Drawing.Size(687, 799);
+            this.tabQLPT.TabIndex = 4;
+            this.tabQLPT.Text = "Phiếu thu";
             // 
             // tabControl
             // 
@@ -159,116 +213,79 @@ namespace GUI
             this.tabControl.TabButtonTextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tabControl.TabButtonTextOffset = new System.Drawing.Point(10, 0);
             this.tabControl.TabIndex = 2;
-            this.tabControl.TabMenuBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.tabControl.TabMenuBackColor = System.Drawing.Color.LightGray;
             // 
-            // tabAccount
+            // tabQLMT
             // 
-            this.tabAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.tabAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tabAccount.ImageIndex = 6;
-            this.tabAccount.Location = new System.Drawing.Point(544, 4);
-            this.tabAccount.Margin = new System.Windows.Forms.Padding(0);
-            this.tabAccount.Name = "tabAccount";
-            this.tabAccount.Size = new System.Drawing.Size(687, 729);
-            this.tabAccount.TabIndex = 0;
-            this.tabAccount.Text = "Tài khoản";
+            this.tabQLMT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
+            this.tabQLMT.ImageIndex = 2;
+            this.tabQLMT.Location = new System.Drawing.Point(544, 4);
+            this.tabQLMT.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabQLMT.Name = "tabQLMT";
+            this.tabQLMT.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabQLMT.Size = new System.Drawing.Size(687, 799);
+            this.tabQLMT.TabIndex = 3;
+            this.tabQLMT.Text = "Phiếu mượn trả";
+            // 
+            // tabQLS
+            // 
+            this.tabQLS.BackColor = System.Drawing.Color.White;
+            this.tabQLS.ImageIndex = 5;
+            this.tabQLS.Location = new System.Drawing.Point(544, 4);
+            this.tabQLS.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabQLS.Name = "tabQLS";
+            this.tabQLS.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabQLS.Size = new System.Drawing.Size(687, 729);
+            this.tabQLS.TabIndex = 2;
+            this.tabQLS.Text = "Sách";
             // 
             // tabQLDG
             // 
             this.tabQLDG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.tabQLDG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabQLDG.ImageIndex = 0;
-            this.tabQLDG.Location = new System.Drawing.Point(274, 4);
+            this.tabQLDG.Location = new System.Drawing.Point(544, 4);
             this.tabQLDG.Margin = new System.Windows.Forms.Padding(0);
             this.tabQLDG.Name = "tabQLDG";
-            this.tabQLDG.Size = new System.Drawing.Size(957, 729);
+            this.tabQLDG.Size = new System.Drawing.Size(687, 729);
             this.tabQLDG.TabIndex = 1;
             this.tabQLDG.Text = "Độc giả";
             // 
-            // tabQLS
+            // tabAccount
             // 
-            this.tabQLS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.tabQLS.ImageIndex = 5;
-            this.tabQLS.Location = new System.Drawing.Point(274, 4);
-            this.tabQLS.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabQLS.Name = "tabQLS";
-            this.tabQLS.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabQLS.Size = new System.Drawing.Size(957, 729);
-            this.tabQLS.TabIndex = 2;
-            this.tabQLS.Text = "Sách";
-            // 
-            // tabQLMT
-            // 
-            this.tabQLMT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.tabQLMT.ImageIndex = 2;
-            this.tabQLMT.Location = new System.Drawing.Point(274, 4);
-            this.tabQLMT.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabQLMT.Name = "tabQLMT";
-            this.tabQLMT.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabQLMT.Size = new System.Drawing.Size(957, 729);
-            this.tabQLMT.TabIndex = 3;
-            this.tabQLMT.Text = "Phiếu mượn trả";
-            // 
-            // tabQLPT
-            // 
-            this.tabQLPT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.tabQLPT.ImageIndex = 3;
-            this.tabQLPT.Location = new System.Drawing.Point(274, 4);
-            this.tabQLPT.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabQLPT.Name = "tabQLPT";
-            this.tabQLPT.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabQLPT.Size = new System.Drawing.Size(957, 729);
-            this.tabQLPT.TabIndex = 4;
-            this.tabQLPT.Text = "Phiếu thu";
-            // 
-            // tabBC
-            // 
-            this.tabBC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.tabBC.ImageIndex = 4;
-            this.tabBC.Location = new System.Drawing.Point(274, 4);
-            this.tabBC.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabBC.Name = "tabBC";
-            this.tabBC.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabBC.Size = new System.Drawing.Size(957, 729);
-            this.tabBC.TabIndex = 5;
-            this.tabBC.Text = "Báo cáo thống kê";
-            // 
-            // tabQLND
-            // 
-            this.tabQLND.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
-            this.tabQLND.ImageIndex = 1;
-            this.tabQLND.Location = new System.Drawing.Point(274, 4);
-            this.tabQLND.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabQLND.Name = "tabQLND";
-            this.tabQLND.Padding = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabQLND.Size = new System.Drawing.Size(957, 729);
-            this.tabQLND.TabIndex = 6;
-            this.tabQLND.Text = "Người dùng";
+            this.tabAccount.BackColor = System.Drawing.Color.White;
+            this.tabAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabAccount.ImageIndex = 1;
+            this.tabAccount.Location = new System.Drawing.Point(544, 4);
+            this.tabAccount.Margin = new System.Windows.Forms.Padding(0);
+            this.tabAccount.Name = "tabAccount";
+            this.tabAccount.Size = new System.Drawing.Size(687, 799);
+            this.tabAccount.TabIndex = 0;
+            this.tabAccount.Text = "Tài khoản";
             // 
             // tabTDQD
             // 
             this.tabTDQD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(241)))), ((int)(((byte)(255)))));
             this.tabTDQD.ImageIndex = 7;
-            this.tabTDQD.Location = new System.Drawing.Point(274, 4);
+            this.tabTDQD.Location = new System.Drawing.Point(544, 4);
             this.tabTDQD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabTDQD.Name = "tabTDQD";
             this.tabTDQD.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabTDQD.Size = new System.Drawing.Size(957, 729);
+            this.tabTDQD.Size = new System.Drawing.Size(687, 729);
             this.tabTDQD.TabIndex = 7;
             this.tabTDQD.Text = "Thay đổi quy định";
             // 
-            // iconList
+            // siticonePictureBox1
             // 
-            this.iconList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("iconList.ImageStream")));
-            this.iconList.TransparentColor = System.Drawing.Color.SlateBlue;
-            this.iconList.Images.SetKeyName(0, "docgia.png");
-            this.iconList.Images.SetKeyName(1, "nguoidung.png");
-            this.iconList.Images.SetKeyName(2, "phieumuontra.png");
-            this.iconList.Images.SetKeyName(3, "phieuthu.png");
-            this.iconList.Images.SetKeyName(4, "report_icon.png");
-            this.iconList.Images.SetKeyName(5, "sach.png");
-            this.iconList.Images.SetKeyName(6, "taikhoan.png");
-            this.iconList.Images.SetKeyName(7, "thaydoiquydinh.png");
+            this.siticonePictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePictureBox1.Image = global::GUI.Properties.Resources.Logo_Trường_Đại_học_Sư_phạm_Thành_phố_Hồ_Chí_Minh3;
+            this.siticonePictureBox1.ImageRotate = 0F;
+            this.siticonePictureBox1.Location = new System.Drawing.Point(12, 3);
+            this.siticonePictureBox1.Name = "siticonePictureBox1";
+            this.siticonePictureBox1.Size = new System.Drawing.Size(178, 63);
+            this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.siticonePictureBox1.TabIndex = 75;
+            this.siticonePictureBox1.TabStop = false;
             // 
             // fManager
             // 
@@ -285,6 +302,7 @@ namespace GUI
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
             this.tabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,16 +310,6 @@ namespace GUI
         #endregion
 
         private Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm siticoneBorderlessForm1;
-        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox1;
-        private Siticone.Desktop.UI.WinForms.SiticoneControlBox exitControlBox;
-        private Siticone.Desktop.UI.WinForms.SiticoneTabControl tabControl;
-        private TabPage tabQLDG;
-        private Siticone.Desktop.UI.WinForms.SiticonePanel topPanel;
-        private TabPage tabQLS;
-        private TabPage tabQLMT;
-        private TabPage tabQLPT;
-        private TabPage tabBC;
-        private TabPage tabQLND;
         private static ucBanAccess ucBan;
         private static ucQLDG ucqldg;
         private static ucQLSach ucqlsach;
@@ -312,9 +320,20 @@ namespace GUI
         private static ucQLND ucnguoidung;
         private static ucThongTinTaiKhoan uctaikhoan;
         private static ucThayDoiQuiDinh ucquidinh;
-        private Label label2;
         private ImageList iconList;
-        private TabPage tabTDQD;
+        private Siticone.Desktop.UI.WinForms.SiticonePanel topPanel;
+        private Label label2;
+        private Siticone.Desktop.UI.WinForms.SiticoneControlBox exitControlBox;
+        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox1;
+        private Siticone.Desktop.UI.WinForms.SiticoneTabControl tabControl;
         private TabPage tabAccount;
+        private TabPage tabQLDG;
+        private TabPage tabQLS;
+        private TabPage tabQLMT;
+        private TabPage tabQLPT;
+        private TabPage tabBC;
+        private TabPage tabQLND;
+        private TabPage tabTDQD;
+        private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox1;
     }
 }
