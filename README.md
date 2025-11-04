@@ -27,26 +27,75 @@
 |   5     | 49.01.103.081 | Nguyễn Thị Cẩm Tiên   |
 |   6     | 49.01.103.098 | Huỳnh Thị Ái Xuân     |
 
-## Chạy thử project
+**-	Giới thiệu chức năng chính:**
+Quản lý sách, quản lý độc giả qua việc quản lý cấp thẻ, quản lý việc cho độc giả mượn sách, việc nhận sách trả của độc giả, việc tìm kiếm sách của độc giả và thống kê báo cáo.
+•	Quản lý trả sách làm nhiệm vụ quản lý việc trả sách của độc giả
+•	Quản lý độc giả là chức năng quản lý việc cấp thẻ cho độc giả
+•	Quản lý sách làm nhiệm vụ quản lý sách có tại thư viện
+•	Quản lý mượn sách làm nhiệm vụ quản lý việc mượn sách của độc giả, công việc chính là lập phiếu mượn sách và cho mượn sách
+•	Thống kê sách lấy thông tin từ hồ sơ quản lý sách, thống kê mượn trả sách bằng cách lấy các thông tin cần thiết từ phiếu mượn. Thống kê độc giả vi phạm từ hồ sơ xử lý vi phạm.
 
-### Yêu cầu để thực thi project
+**-	Kiến trúc hệ thống**
+[ GUI ] ⇄ [ BUS ] ⇄ [ DAL ] ⇄ [ Database ]
+↑ ↑ ↑
+Giao diện Logic Truy vấn SQL
 
-- Visual Studio 2022
-- .NET Framework 4.7.2
-- Entity Framework 6.4.4
-- SQL Server
-- Siticone UI/UX Framework
+-	Công nghệ sử dụng
+Thành phần	         Công nghệ
+Ngôn ngữ	        C# (.NET Framework)
+Giao diện	         Windows Forms
+Cơ sở dữ liệu	         SQL Server
+Mô hình	        3 lớp (GUI – BUS – DAL)
+IDE	                       Visual Studio 2022
 
-### Bước 1: Khởi tạo database
+**-	Cấu trúc thư mục chính**
+📁 GUI
+ ┣ 📂 Forms
+ ┃ ┣ fLogin.cs
+ ┃ ┣ fMain.cs
+ ┃ ┗ fMainDG.cs
+ ┣ 📂 UserControls
+ ┃ ┣ ucTuaSach.cs
+ ┃ ┣ ucSach.cs
+ ┃ ┣ ucMuonTra.cs
+ ┃ ┣ ucQLND.cs
+ ┃ ┗ ucTraCuuSach.cs
+ ┗ 📂 Properties
+     ┗ Settings.settings
 
-- Thực thi file QLTV.sql để khởi tạo database
+📁 BUS
+ ┣ BUSNguoiDung.cs
+ ┣ BUSSach.cs
+ ┣ BUSMuonTra.cs
+ ┗ BUSTuaSach.cs
 
-### Bước 2: Thực thi chương trình
+📁 DAO
+ ┣ DAONguoiDung.cs
+ ┣ DAOSach.cs
+ ┣ DAOMuonTra.cs
+ ┗ DAOTuaSach.cs
 
-- Mở solution trong Visual Studio
-- Tải về bằng Nuget nếu VS không tự động tải: Entity Framework 6.4.4, Siticone UI/UX Framework
-- Debug
+📁 DTO
+ ┣ NguoiDung.cs
+ ┣ Sach.cs
+ ┣ TuaSach.cs
+ ┗ MuonTra.cs
 
-## Release
+📁 Database
+ ┗ QLThuVien.sql  → Script tạo database & dữ liệu mẫu
 
-- Chương trình đã có bản release. Có thể download file installer về cài đặt và dùng thử
+**-	Phân lớp**
+Thành phần	
+_ Frontend:Giao diện người dùng (UI);  công nghệ sử dụng là C# WinForms (.NET Framework)	GUI/
+- Backend: (BUS)	Xử lý logic, kiểm tra nghiệp vụ; công nghệ sử dụng là	C# Class Library	BUS/
+- Backend:  (DAL)	Truy xuất dữ liệu từ SQL Server; công nghệ sử dụng làADO.NET, SQL Server	DAL/
+- DTO: 	Truyền dữ liệu giữa các tầng; công nghệ sử dụng là	C# Class	DTO/
+
+Bước 1: Khởi tạo database
+•	Thực thi file QLTV.sql để khởi tạo database
+Bước 2: Thực thi chương trình
+•	Mở solution trong Visual Studio
+•	Tải về bằng Nuget nếu VS không tự động tải: Entity Framework 6.4.4, Siticone UI/UX Framework
+•	Debug
+Release
+•	Chương trình đã có bản release. Có thể download file installer về cài đặt và dùng thử
