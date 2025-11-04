@@ -29,10 +29,15 @@
 
 **-	Giới thiệu chức năng chính:**
 Quản lý sách, quản lý độc giả qua việc quản lý cấp thẻ, quản lý việc cho độc giả mượn sách, việc nhận sách trả của độc giả, việc tìm kiếm sách của độc giả và thống kê báo cáo.
+
 •	Quản lý trả sách làm nhiệm vụ quản lý việc trả sách của độc giả
+
 •	Quản lý độc giả là chức năng quản lý việc cấp thẻ cho độc giả
+
 •	Quản lý sách làm nhiệm vụ quản lý sách có tại thư viện
+
 •	Quản lý mượn sách làm nhiệm vụ quản lý việc mượn sách của độc giả, công việc chính là lập phiếu mượn sách và cho mượn sách
+
 •	Thống kê sách lấy thông tin từ hồ sơ quản lý sách, thống kê mượn trả sách bằng cách lấy các thông tin cần thiết từ phiếu mượn. Thống kê độc giả vi phạm từ hồ sơ xử lý vi phạm.
 
 **-	Kiến trúc hệ thống**
