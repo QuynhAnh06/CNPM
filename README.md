@@ -14,7 +14,8 @@
 
 ### Giảng viên hướng dẫn
 
-- TS Trần Sơn Hải giảng viên khoa CNTT_Trường ĐHSP TP.HCM
+- TS Trần Sơn Hải
+- CN Lê Thanh Thoại
 
 ### Sinh viên thực hiện
 
@@ -55,7 +56,8 @@ Giao diện Logic Truy vấn SQL
 |IDE	          | Visual Studio 2022            |
 
 
-**-	Cấu trúc thư mục chính**
+### 📂 Cấu trúc thư mục chính
+<pre>
 📁 GUI
  ┣ 📂 Forms
  ┃ ┣ fLogin.cs
@@ -89,7 +91,8 @@ Giao diện Logic Truy vấn SQL
  ┗ MuonTra.cs
 
 📁 Database
- ┗ QLThuVien.sql  → Script tạo database & dữ liệu mẫu
+ ┗ QLThuVien.sql → Script tạo database & dữ liệu mẫu
+</pre>
 
 **-	Phân lớp**
 Thành phần	
@@ -98,11 +101,11 @@ _ Frontend:Giao diện người dùng (UI);  công nghệ sử dụng là C# Win
 - Backend:  (DAL)	Truy xuất dữ liệu từ SQL Server; công nghệ sử dụng làADO.NET, SQL Server	DAL/
 - DTO: 	Truyền dữ liệu giữa các tầng; công nghệ sử dụng là	C# Class	DTO/
 
-Bước 1: Khởi tạo database
+**Bước 1: Khởi tạo database**
 
 •	Thực thi file QLTV.sql để khởi tạo database
 
-Bước 2: Thực thi chương trình
+**Bước 2: Thực thi chương trình**
 
 •	Mở solution trong Visual Studio
 
@@ -110,6 +113,6 @@ Bước 2: Thực thi chương trình
 
 •	Debug
 
-Release
+**Release**
 
 •	Chương trình đã có bản release. Có thể download file installer về cài đặt và dùng thử
