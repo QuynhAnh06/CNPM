@@ -45,13 +45,15 @@ Quản lý sách, quản lý độc giả qua việc quản lý cấp thẻ, qu�
 ↑ ↑ ↑
 Giao diện Logic Truy vấn SQL
 
--	Công nghệ sử dụng
-Thành phần	         Công nghệ
-Ngôn ngữ	        C# (.NET Framework)
-Giao diện	         Windows Forms
-Cơ sở dữ liệu	         SQL Server
-Mô hình	        3 lớp (GUI – BUS – DAL)
-IDE	                       Visual Studio 2022
+**-	Công nghệ sử dụng**
+| **Thành phần**|           **Công nghệ**       | 
+| ------------- | ----------------------------- |
+|Ngôn ngữ	      | C# (.NET Framework)           |
+|Giao diện	    | Windows Forms                 |
+|Cơ sở dữ liệu	| SQL Server                    |
+|Mô hình	      | 3 lớp (GUI – BUS – DAL)       |
+|IDE	          | Visual Studio 2022            |
+
 
 **-	Cấu trúc thư mục chính**
 📁 GUI
@@ -97,10 +99,17 @@ _ Frontend:Giao diện người dùng (UI);  công nghệ sử dụng là C# Win
 - DTO: 	Truyền dữ liệu giữa các tầng; công nghệ sử dụng là	C# Class	DTO/
 
 Bước 1: Khởi tạo database
+
 •	Thực thi file QLTV.sql để khởi tạo database
+
 Bước 2: Thực thi chương trình
+
 •	Mở solution trong Visual Studio
+
 •	Tải về bằng Nuget nếu VS không tự động tải: Entity Framework 6.4.4, Siticone UI/UX Framework
+
 •	Debug
+
 Release
+
 •	Chương trình đã có bản release. Có thể download file installer về cài đặt và dùng thử
